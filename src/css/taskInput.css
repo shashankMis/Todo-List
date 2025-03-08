@@ -1,0 +1,60 @@
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  margin-bottom: 20px;
+}
+
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-section select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-section button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input-section button:hover {
+  background: #0056b3;
+}
+
+
+@media (max-width: 347px) {
+  .task-input {
+    width: 100%;
+  }
+
+  .input-section {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .input-section input,
+  .input-section select,
+  .input-section button {
+    width: 100%;
+  }
+}
+
+
+

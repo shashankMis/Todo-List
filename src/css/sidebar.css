@@ -1,0 +1,131 @@
+.sidebar {
+  width: 250px;
+  background: #ffffff;
+  color: #333;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: bold;
+  color: white;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.sidebar-menu li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-menu li:hover,
+.sidebar-menu .active {
+  background: #364136;
+  border-radius: 5px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #28a745;
+}
+
+.active{
+  color: black;
+}
+
+.add-list-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-list-btn:hover {
+  background: #218838;
+}
+
+.task-summary {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-summary h4 {
+  margin: 0;
+}
+
+.task-summary p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.progress-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+  background: conic-gradient(#e9ecef 0deg, #e9ecef 360deg);
+  transition: background 0.3s ease-in-out; 
+}
+
+
+@media (max-width: 347px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .profile-section {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .task-summary {
+    width: 100%;
+  }
+}
+
+
