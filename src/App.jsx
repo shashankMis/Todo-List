@@ -7,7 +7,7 @@ import TaskList from "./components/TaskList";
 import WeatherInfo from "./components/WeatherInfo";
 import Auth from "./components/Auth";
 import "./css/global.css";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
